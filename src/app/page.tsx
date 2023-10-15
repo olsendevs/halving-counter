@@ -70,8 +70,12 @@ export default function Home() {
 
   async function getLastBlockData() {
     try {
+      const hash = await axios.get(
+        'https://blockchain.info/q/latesthash?cors=true',
+      );
+
       const response = await axios.get(
-        'https://blockchain.info/rawblock/000000000000000000036e24080ecd19ec4fdca4ae2a4ad233c33a5532b90274?cors=true',
+        `https://blockchain.info/rawblock/${hash.data}?cors=true`,
       );
 
       // const response = mock;
