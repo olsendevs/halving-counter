@@ -5,9 +5,16 @@ export default function Footer() {
     <div className="text-white text-center bottom-0 mt-4 lg:fixed w-full">
       <Separator />
       <h4 className="p-4">
-        © 2023 OlsenDevs. Developed with ♥️ by{' '}
+        © 2023{' '}
         <a
-          href="https://github.com/Jolsentecn"
+          href="https://github.com/olsendevs"
+          target="_blank"
+        >
+          OlsenDevs
+        </a>
+        . Developed with ♥️ by{' '}
+        <a
+          href="https://github.com/olsendevs"
           target="_blank"
         >
           OlsenDevs
